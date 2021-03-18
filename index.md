@@ -1,19 +1,19 @@
 # Overview
 
-* Land
+**Land**
   * 25 acres, hilly and forested
   * 130 ft elevation from low to rocky peaks
   * Creek that runs to the east side of the property through a ravine. 5 vernal pools (seasonal ponds). 
   * Covered in natural Rhododendron and ferns. 
   * Wildlife includes: deer, fox, possum, raccoon, squirrel, chipmunk, coyote, bobcat, black bear, hawk, falcon, owl, and eagle.
-* House
+**House**
   * 2640 sqft, 3 bedroom, 2.5 bathroom steel and glass modern construction. 
   * Built to passive house standards. 
   * Built-in glass 500 sqft greenhouse. 
   * 13x17 ft glass cube that cantilevers over the ravine. 
   * 1300 sqft basement that opens to ravine. 
   * Stairs provide rooftop access to 2 roof planes.
-* Workshop
+**Workshop**
   * 2950 sqft steel and glass modern construction. 
   * 1852 sqft open workshop. 
   * 1098 sqft mezzanine with bathroom. 
