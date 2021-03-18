@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+# Overview
 
-You can use the [editor on GitHub](https://github.com/setpixel/roxbury/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+* Land
+  * 25 acres, hilly and forested
+  * 130 ft elevation from low to rocky peaks
+  * Creek that runs to the east side of the property through a ravine. 5 vernal pools (seasonal ponds). 
+  * Covered in natural Rhododendron and ferns. 
+  * Wildlife includes: deer, fox, possum, raccoon, squirrel, chipmunk, coyote, bobcat, black bear, hawk, falcon, owl, and eagle.
+* House
+  * 2640 sqft, 3 bedroom, 2.5 bathroom steel and glass modern construction. 
+  * Built to passive house standards. 
+  * Built-in glass 500 sqft greenhouse. 
+  * 13x17 ft glass cube that cantilevers over the ravine. 
+  * 1300 sqft basement that opens to ravine. 
+  * Stairs provide rooftop access to 2 roof planes.
+* Workshop
+  * 2950 sqft steel and glass modern construction. 
+  * 1852 sqft open workshop. 
+  * 1098 sqft mezzanine with bathroom. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Background
 
-### Markdown
+In June of 2020, my wife and I decided to move out of NYC in favor of living in the east coast country. We've been living in NYC for 15 years and covid made us realize we wanted to live closer to nature. We drew a 90 minute circle around NYC, rented a car and drove all around: PA, Upstate NY, Western Mass and CT. Initially we were looking for a house, however, most houses on the market in northeastern US are colonial style that are at least 35 years old. We expanded our search to plots of land. The first piece of land we saw was a huge hilly and forested deep down a private gravel road in Roxbury CT. We walked up an old logger's trail on the property, crossing a creek, settling at a plateau surrounded by rocky hills. It was exactly where I wanted to live.   
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Grew up around a forest
 
-```markdown
-Syntax highlighted code block
+want a house and a workshop / barn
 
-# Header 1
-## Header 2
-### Header 3
+# Plans
+    Land
+        survey
+        charles map
+    House
+        pdf
+        3d
+    Workshop
+        pdf
+        3d
 
-- Bulleted
-- List
+# Ideas
+    Reading rooms
+    Lights
+    Benches
+    Intercom
+    Statues
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+# Videos
+    Land walk through
+    House walk through
+    Workshop walk through
 
-[Link](url) and ![Image](src)
-```
+# High Level Flow:
+- [x] Buy Land
+- [x] Get Land Survey from Civil Engineers
+- [x] Get Wetlands Approval for building
+- [x] Design House / Workshop
+- [ ] Get Building Contractor
+- [ ] Get Approval to Build
+- [ ] Build temporary driveway and bridge
+- [ ] Bring in Electric and Internet
+- [ ] Drill for water
+- [ ] Build Barn to bring in electric and internet
+- [ ] Dig foundations for house and Workshop
+- [ ] Framing
+- [ ] Insulation
+- [ ] Windows
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# Log
 
-### Jekyll Themes
+Current Status
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/setpixel/roxbury/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Budgets
