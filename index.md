@@ -1,7 +1,5 @@
 # 3 bedroom, 2.5 bathroom steel and glass modern house and a 2950 sqft modern workshop on 25 acres of hilly, forested land in Roxbury, CT.
 
-![](https://github.com/setpixel/roxbury/raw/main/images/houseortho.jpg)
-
 **House**
 * 2640 sqft, 3 bedroom, 2.5 bathroom steel and glass modern construction. 
 * Built to passive house standards. 
@@ -10,14 +8,14 @@
 * 1300 sqft basement that opens to ravine. 
 * Stairs provide rooftop access to 2 roof planes.
 
-![](https://github.com/setpixel/roxbury/raw/main/images/workshoportho.jpg)
+![](https://github.com/setpixel/roxbury/raw/main/images/houseortho.jpg)
 
 **Workshop**
 * 2950 sqft steel and glass modern construction. 
 * 1852 sqft open workshop. 
 * 1098 sqft mezzanine with bathroom. 
 
-![](https://github.com/setpixel/roxbury/raw/main/images/landmap.jpg)
+![](https://github.com/setpixel/roxbury/raw/main/images/workshoportho.jpg)
 
 **Land**
 * 25 acres, hilly and forested
@@ -26,15 +24,17 @@
 * Covered in natural Rhododendron and ferns. 
 * Wildlife includes: deer, fox, possum, raccoon, squirrel, chipmunk, coyote, bobcat, black bear, hawk, falcon, owl, and eagle.
 
-House:
+![](https://github.com/setpixel/roxbury/raw/main/images/landmap.jpg)
+
+
+**House:**
 ![greenhouse in the house](https://github.com/setpixel/roxbury/raw/main/images/houserender.jpg)
 
-Greenhouse attached to house:
+**Greenhouse attached to house:**
 ![greenhouse in the house](https://github.com/setpixel/roxbury/raw/main/images/greenhouserender.jpg)
 
-Workshop:
+**Workshop:**
 ![greenhouse in the house](https://github.com/setpixel/roxbury/raw/main/images/workshoprender.jpg)
-
 
 # Background
 
@@ -46,10 +46,13 @@ want a house and a workshop / barn
 
 # Plans
 
-House: https://github.com/setpixel/roxbury/raw/main/plans/210317%20HOUSE.pdf
-Workshop: https://github.com/setpixel/roxbury/raw/main/plans/210317%20WORKSHOP.pdf
-Land Survey: https://github.com/setpixel/roxbury/raw/main/plans/3153%20Site%20Plans%202-10-21.pdf
-Charles Land Map: https://github.com/setpixel/roxbury/raw/main/plans/land.pdf
+House: [https://github.com/setpixel/roxbury/raw/main/plans/210317%20HOUSE.pdf](https://github.com/setpixel/roxbury/raw/main/plans/210317%20HOUSE.pdf)   
+
+Workshop: [https://github.com/setpixel/roxbury/raw/main/plans/210317%20WORKSHOP.pdf](https://github.com/setpixel/roxbury/raw/main/plans/210317%20WORKSHOP.pdf)   
+
+Land Survey: [https://github.com/setpixel/roxbury/raw/main/plans/3153%20Site%20Plans%202-10-21.pdf](https://github.com/setpixel/roxbury/raw/main/plans/3153%20Site%20Plans%202-10-21.pdf)  
+
+Charles Land Map: [https://github.com/setpixel/roxbury/raw/main/plans/land.pdf](https://github.com/setpixel/roxbury/raw/main/plans/land.pdf)  
 
 # Ideas
     Reading rooms
