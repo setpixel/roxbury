@@ -63,13 +63,13 @@ Charles Land Map: [https://github.com/setpixel/roxbury/raw/main/plans/land.pdf](
 
 # Videos
 
-3D Land walk through: https://www.youtube.com/watch?v=loKF1bI0Avw
+3D Land walk through: [https://www.youtube.com/watch?v=loKF1bI0Avw](https://www.youtube.com/watch?v=loKF1bI0Avw)
 
-Drone fly through of land: https://www.youtube.com/watch?v=e8Twag35ky0
+Drone fly through of land: [https://www.youtube.com/watch?v=e8Twag35ky0](https://www.youtube.com/watch?v=e8Twag35ky0)
 
-3D House walk through (very old plan): https://www.youtube.com/watch?v=SCXt_nmXHR0 
+3D House walk through (very old plan): [https://www.youtube.com/watch?v=SCXt_nmXHR0](https://www.youtube.com/watch?v=SCXt_nmXHR0)
 
-Bonus of scottish highland cows: https://www.youtube.com/watch?v=_HkmFftj-T8
+Bonus of scottish highland cows: [https://www.youtube.com/watch?v=_HkmFftj-T8](https://www.youtube.com/watch?v=_HkmFftj-T8)
 
 # High Level Flow:
 - [x] Buy Land
