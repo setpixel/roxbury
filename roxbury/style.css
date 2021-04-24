@@ -25,7 +25,7 @@
   }
 
   body {
-    @apply bg-primary-900 text-primary-400 pt-0 text-2xl xl:text-3xl;
+    @apply bg-primary-900 text-primary-400 pt-0 text-xl sm:text-2xl xl:text-3xl;
   }
 
   p {
@@ -37,11 +37,11 @@
   }
 
   h1 {
-    @apply text-primary-100 text-8xl font-black leading-none pb-8 md:text-9xl md:pb-9 2xl:text-10xl;
+    @apply text-primary-100 text-6xl sm:text-8xl font-black leading-none pb-8 md:text-9xl md:pb-9 2xl:text-10xl;
   }
 
   h2 {
-    @apply leading-tight text-4xl font-semibold pb-8 text-primary-500 md:text-6xl lg:text-7xl 2xl:text-8xl md:leading-tight lg:leading-tight 2xl:leading-tight ;
+    @apply leading-tight text-3xl sm:text-4xl font-semibold pb-8 text-primary-500 md:text-6xl lg:text-7xl 2xl:text-8xl md:leading-tight lg:leading-tight 2xl:leading-tight ;
   }
 
   h3 {
@@ -72,9 +72,8 @@
   }
   
   .floor-button {
-    @apply bg-primary-200 inline p-2 text-sm rounded-md font-semibold bg-opacity-20 hover:bg-opacity-50 text-primary-300 hover:text-primary-100 cursor-pointer transition duration-200 ease-in-out;
+    @apply bg-primary-200 inline p-2 text-xs sm:text-sm rounded-md font-semibold bg-opacity-20 hover:bg-opacity-50 text-primary-300 hover:text-primary-100 cursor-pointer transition duration-200 ease-in-out;
   }
-
 
   ul.timeline {
     @apply my-0;
@@ -85,7 +84,7 @@
   }
 
   ul.timeline li:last-child {
-    @apply border-l-4 border-opacity-0;
+    @apply border-l-4 border-opacity-0 mb-0 pb-0;
   }
 
   ul.timeline li::before {
@@ -136,11 +135,35 @@
   }
 
   .ideacard div:nth-child(2) span {
-    @apply block pb-2 text-3xl font-semibold text-primary-300;
+    @apply block pb-2 text-xl sm:text-3xl font-semibold text-primary-300;
   }
 
   .ideacard div:nth-child(2) span:nth-child(2) {
-    @apply block text-lg leading-tight font-normal text-primary-500 ;
+    @apply block text-sm sm:text-lg leading-tight font-normal text-primary-500 ;
+  }
+
+  .download-plan {
+    @apply group flex mt-8 bg-primary-800 rounded-lg overflow-hidden max-w-xs sm:max-w-sm border-4 border-primary-600 transition duration-200 ease-in-out hover:bg-primary-600 hover:border-primary-600;
+  }
+  
+  .download-plan div:nth-child(1) {
+    @apply w-5/12 bg-primary-700 flex items-center justify-center relative;
+  }
+
+  .activities {
+    @apply flex flex-wrap;
+  }
+
+  .activities div {
+    @apply mb-1 ml-1 whitespace-nowrap bg-primary-200 p-2 text-xs sm:text-sm rounded-md font-semibold bg-opacity-10 text-primary-400;
+  }
+
+  .video-link {
+    @apply group flex bg-primary-800 rounded-lg overflow-hidden border-4 border-primary-600 transition duration-200 ease-in-out hover:bg-primary-600 hover:border-primary-600;
+  }
+  
+  .video-link div:nth-child(1) {
+    @apply w-5/12 bg-primary-700 flex items-center justify-center relative;
   }
 
 

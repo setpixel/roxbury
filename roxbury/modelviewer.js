@@ -60,7 +60,6 @@ function init() {
 
     // } );
 
-    scene.rotation.y = Math.PI / 2;
     // const pmremGenerator = new THREE.PMREMGenerator( renderer );
     // const environment = new RoomEnvironment();
     // scene.environment = pmremGenerator.fromScene( environment ).texture;
@@ -74,9 +73,11 @@ function init() {
 
 
 
+    scene.rotation.y = Math.PI /2 ;
 
     if (file == 'house') {
-      camera.position.set(-34.739720817258195, 9.372662522451744, 31.40068733255596);
+      camera.position.set(27.965819837017115, 6.406842735638378, 35.14534657091487);
+      scene.rotation.y = Math.PI ;
     } else if (file == 'workshop') {
       camera.position.set(33.25308157435134, 14.115172909416785, 22.4285379119101);
     } else if (file == 'land') {
@@ -89,7 +90,7 @@ function init() {
 
 
     const controls = new OrbitControls(scene.userData.camera, scene.userData.element);
-    controls.addEventListener('change', render); // use if there is no animation loop
+    //controls.addEventListener('change', render); // use if there is no animation loop
     controls.enableDamping = false; // an animation loop is required when either damping or auto-rotation are enabled
     controls.dampingFactor = 0.1;
     controls.autoRotate = false;
@@ -179,8 +180,13 @@ function animate() {
 
 function render() {
   updateSize();
+  
+  let scrollY = window.pageYOffset;
 
-  canvas.style.transform = `translateY(${window.scrollY}px)`;
+  if (scrollY < 7000) {
+    canvas.style.transform = `translateY(${window.pageYOffset}px)`;
+  } 
+
 
   renderer.setClearColor(0x312e81);
   renderer.setScissorTest(false);
@@ -188,6 +194,8 @@ function render() {
 
   renderer.setClearColor(0x312e81);
   renderer.setScissorTest(true);
+
+  //console.log(scenes[0].userData.camera.position)
 
   scenes.forEach(function (scene) {
 
