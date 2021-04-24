@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		
+	<script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+    import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
+    import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+    import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+		import { SSAOPass } from 'three/examples/jsm/postprocessing/SSAOPass.js';
+
+    let camera, scene, renderer;
+    let controls;
+    let composer;
+
+    init();
+    animate();
+
+    function init() {
+      const container = document.createElement( 'div' );
+			document.body.appendChild( container );
+
+      renderer = new THREE.WebGLRenderer( { antialias: true } );
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			container.appendChild( renderer.domElement );
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.autoClear = false;
+
+      renderer.shadowMap.enabled = true;
+				renderer.shadowMap.type = THREE.PCFShadowMap;
+
+      composer = new EffectComposer( renderer );
+      composer.setPixelRatio(2.2);
+      const width = window.innerWidth;
+				const height = window.innerHeight;
+
+
+
+			camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.25, 150 );
+			camera.position.set( 2,5, 10 );
+
+
+      const environment = new RoomEnvironment();
+      const pmremGenerator = new THREE.PMREMGenerator( renderer );
+
+      const globalPlane = new THREE.Plane( new THREE.Vector3( 0, -1, 0 ), -.4 );
+      const globalPlanes = [ globalPlane ];
+      renderer.clippingPlanes = globalPlanes;
+
+			scene = new THREE.Scene();
+      scene.background = new THREE.Color( 0xbbbbbb );
+      scene.environment = pmremGenerator.fromScene( environment ).texture;
+      const loader = new GLTFLoader().setPath( 'models/' );
+  		loader.load( 'house.glb', function ( gltf ) {
+			  
+        gltf.scene.castShadow = true;
+				gltf.scene.receiveShadow = true;
+
+        scene.add( gltf.scene );
+
+
+        console.log(gltf.scene)
+			  render();
+			} );
+
+      scene.add( new THREE.AmbientLight( 0x505050 ) );
+
+
+      const dirLight = new THREE.DirectionalLight( 0xffffff, 3 );
+				dirLight.position.set( 5, 5, 0 );
+
+				dirLight.castShadow = true;
+				dirLight.shadow.camera.near = 1;
+				dirLight.shadow.camera.far = 50;
+
+				dirLight.shadow.camera.right = 1;
+				dirLight.shadow.camera.left = - 1;
+				dirLight.shadow.camera.top	= 1;
+				dirLight.shadow.camera.bottom = - 1;
+
+				dirLight.shadow.mapSize.width = 1024;
+				dirLight.shadow.mapSize.height = 1024;
+				scene.add( dirLight );
+
+
+
+
+			controls = new OrbitControls( camera, renderer.domElement );
+			controls.addEventListener( 'change', render ); // use if there is no animation loop
+      controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+			controls.dampingFactor = 0.05;
+			controls.screenSpacePanning = true;
+      controls.maxPolarAngle = Math.PI / 1.5;
+      controls.minDistance = 40;
+			controls.maxDistance = 50;
+			controls.target.set( 0, 0, 0 );
+			controls.update();
+
+			window.addEventListener( 'resize', onWindowResize );
+
+      window.onresize = onWindowResize;
+
+      const ssaoPass = new SSAOPass( scene, camera, width, height );
+
+      console.log(width,height)
+ssaoPass.kernelRadius = 0.1;
+ssaoPass.output = SSAOPass.OUTPUT.Default;
+ssaoPass.minDistance = 0.005;
+ssaoPass.maxDistance = 0.1;
+ssaoPass.antialias = true;
+composer.addPass( ssaoPass );
+
+onWindowResize();
+
+    }
+
+    function onWindowResize() {
+console.log('sup')
+camera.aspect = window.innerWidth / window.innerHeight;
+camera.updateProjectionMatrix();
+
+renderer.setSize( window.innerWidth, window.innerHeight );
+composer.setSize( window.innerWidth, window.innerHeight );
+
+//render();
+
+}
+
+    function animate() {
+      requestAnimationFrame( animate );
+      controls.update();
+      renderer.clippingPlanes[0].constant += 0.01
+
+      console.log(renderer.clippingPlanes)
+      
+      render();
+
+    }
+
+    function render() {
+      
+      renderer.render( scene, camera );
+    }
+
+		</script>
+	</body>
+</html>
+
+

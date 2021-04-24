@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roxbury Forest House</title>
+  </head>
+
+  <body>
+    <canvas class="absolute left-0 w-full h-full" id="c"></canvas>
+
+    <div class="absolute z-1 top-0 w-full pt-8 lg:pt-16">
+      <section class="pb-6">
+        <div class="container">
+          <h1>Roxbury Forest House</h1>
+          <h2>3 bedroom, 2.5 bathroom steel and glass modern house and a 2,950 sqft modern workshop on 25 acres of hilly, forested land in Roxbury, CT.</h2>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="lg:flex items-center">
+            <div class="mb-8 lg:mb-0 lg:w-1/3 lg:z-10">
+              <h3>Main House</h3>
+              <ul class="list-disc leading-tight ml-6">
+                <li>2,640 sqft, 3 bedroom, 2.5 bathroom steel and glass modern construction.</li>
+                <li>Built to passive house standards.</li>
+                <li>Built-in glass 500 sqft greenhouse.</li>
+                <li>13x17 ft glass cube that cantilevers over the ravine.</li>
+                <li>1,300 sqft basement that opens to ravine.</li>
+                <li>Stairs provide rooftop access to 2 roof planes.</li>
+              </ul>
+
+              <a href="https://docs.google.com/viewer?url=https://github.com/setpixel/roxbury/raw/main/plans/210317%20HOUSE.pdf">
+                <figure class="group flex mt-8 bg-primary-800 rounded-lg overflow-hidden w-96 max-w-96 border-4 border-primary-600 transition duration-500 ease-in-out hover:bg-primary-600 hover:border-primary-600">
+                  <div class="w-5/12 bg-primary-700 flex items-center justify-center relative">
+                    <video class="fullscreen opacity-50 group-hover:opacity-80 transition duration-500 ease-in-out" src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov" playsinline autoplay muted loop>
+                    </video>
+                  </div>
+                  <div class="w-7/12 p-4">
+                    <span class="block text-xl font-semibold text-primary-300">Download Plan PDF</span>
+                    <span class="block text-lg">13mb</span>
+        
+                  </div>
+                </figure>
+              </a>
+
+            </div>
+            <div class="block lg:w-2/3 h-3/5 z-0 h-50vh lg:h-olg">
+              <div id="three-house" class="absolute left-0 w-full h-50vh lg:h-olg lg:w-o lg:m-o lg:relative">
+
+                
+
+              </div>
+
+              <div class="relative h-50vh lg:h-auto" style="pointer-events: none;">
+                <div class="absolute bottom-16 right-0 select-none " style="pointer-events: auto;">
+                  <div id="house-basement" class="floor-button">Basement</div>
+                  <div id="house-floor-1" class="floor-button">Floor 1</div>
+                  <div id="house-floor-2" class="floor-button">Floor 2</div>
+                  <div id="house-whole" class="floor-button">Whole house</div>
+                </div>
+              </div>
+              
+
+
+              
+            
+            </div>
+            
+
+          </div>
+          
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="lg:flex items-center">
+            <div class="mb-8 lg:mb-0 lg:w-1/3 lg:z-10">
+              <h3>Workshop</h3>
+              <ul class="list-disc leading-tight ml-6">
+                <li>2,950 sqft steel and glass modern construction.</li>
+                <li>1,852 sqft open workshop.</li>
+                <li>1,098 sqft mezzanine with bathroom.</li>
+              </ul>
+  
+              <a href="https://docs.google.com/viewer?url=https://github.com/setpixel/roxbury/raw/main/plans/210317%20WORKSHOP.pdf">
+                <figure class="group flex mt-8 bg-primary-800 rounded-lg overflow-hidden w-96 max-w-96 border-4 border-primary-600 transition duration-500 ease-in-out hover:bg-primary-600 hover:border-primary-600">
+                  <div class="w-5/12 bg-primary-700 flex items-center justify-center relative">
+                    <video class="fullscreen opacity-50 group-hover:opacity-80 transition duration-500 ease-in-out" src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov" playsinline autoplay muted loop>
+                    </video>
+                  </div>
+                  <div class="w-7/12 p-4">
+                    <span class="block text-xl font-semibold text-primary-300">Download Plan PDF</span>
+                    <span class="block text-lg">13mb</span>
+        
+                  </div>
+                </figure>
+              </a>
+  
+            </div>
+            <div class="block lg:w-2/3 h-3/5 z-0 h-50vh lg:h-olg">
+              <div id="three-workshop" class="absolute left-0 w-full h-50vh lg:h-olg lg:w-o lg:m-o lg:relative">
+    
+                
+  
+              </div>
+  
+              <div class="relative h-50vh lg:h-auto" style="pointer-events: none;">
+                <div class="absolute bottom-16 right-0 select-none " style="pointer-events: auto;">
+                  <div id="workshop-floor-1" class="floor-button">Floor 1</div>
+                  <div id="workshop-floor-2" class="floor-button">Floor 2</div>
+                  <div id="workshop-whole" class="floor-button">Whole Workshop</div>
+                </div>
+              </div>
+
+              
+  
+  
+              
+            
+            </div>
+            
+  
+          </div>
+          
+        </div>
+          
+      </section>
+
+
+      <section>
+        <div class="container">
+          <div class="lg:flex items-center">
+            <div class="mb-8 lg:mb-0 lg:w-1/3 lg:z-10">
+              <h3>Land</h3>
+              <ul class="list-disc leading-tight ml-6">
+                <li>25 acres, hilly and forested</li>
+                <li>130 ft elevation from low to rocky peaks</li>
+                <li>Creek that runs to the east side of the property through a ravine. 5 vernal pools (seasonal ponds).</li>
+                <li>Covered in natural Rhododendron and ferns.</li>
+                <li>Wildlife includes: deer, fox, possum, raccoon, squirrel, chipmunk, coyote, bobcat, black bear, hawk, falcon, owl, and eagle.</li>
+                  </ul>
+  
+              <a href="https://docs.google.com/viewer?url=https://github.com/setpixel/roxbury/raw/main/plans/land.pdf">
+                <figure class="group flex mt-8 bg-primary-800 rounded-lg overflow-hidden w-96 max-w-96 border-4 border-primary-600 transition duration-500 ease-in-out hover:bg-primary-600 hover:border-primary-600">
+                  <div class="w-5/12 bg-primary-700 flex items-center justify-center relative">
+                    <video class="fullscreen opacity-50 group-hover:opacity-80 transition duration-500 ease-in-out" src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov" playsinline autoplay muted loop>
+                    </video>
+                  </div>
+                  <div class="w-7/12 p-4">
+                    <span class="block text-xl font-semibold text-primary-300">Download Plan PDF</span>
+                    <span class="block text-lg">13mb</span>
+        
+                  </div>
+                </figure>
+              </a>
+  
+            </div>
+            <div class="block lg:w-2/3 h-3/5 z-0 h-50vh lg:h-olg">
+              <div id="three-land" class="absolute left-0 w-full h-50vh lg:h-olg lg:w-o lg:m-o lg:relative">
+    
+                
+  
+              </div>
+  
+              <!-- <div class="relative h-50vh lg:h-auto" style="pointer-events: none;"><div class="absolute bottom-0 right-0 " style="pointer-events: auto;">floor 1 floor 2</div></div> -->
+              
+  
+  
+              
+            
+            </div>
+            
+  
+          </div>
+          
+        </div>
+          
+      </section>
+
+
+
+
+      <section>
+        <div class="lg:container mx-auto">
+          <h3 class="container">Rendering Gallery</h3>
+
+          <div class="md:px-4 md:grid grid-rows-2 grid-flow-col gap-4">
+            <div class="md:row-span-2 bg-green-100 relative mb-4 md:mb-0 md:rounded-md overflow-hidden" ><img class="w-full lg:w-auto lg:h-auto object-cover object-center" src="/img/greenhouserender.jpg">
+              <div class="absolute bottom-0 pb-4 pl-5 pr-4 pt-9 w-full text-lg text-primary-100 leading-tight" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));">Cross section of the greenhouse built into the house.</div>
+            </div>
+            <div class="bg-green-100 relative mb-4 md:mb-0 md:rounded-md overflow-hidden"><img class="w-full h-full object-cover object-center" src="/img/houserender.jpg">
+              <div class="absolute bottom-0 pb-4 pl-5 pr-4 pt-9 w-full text-lg text-primary-100 leading-tight" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));">Main House</div>
+            
+            </div>
+            <div class="bg-green-100 relative  md:rounded-md overflow-hidden"><img class="w-full h-full object-cover object-center" src="/img/workshoprender.jpg">
+              <div class="absolute bottom-0 pb-4 pl-5 pr-4 pt-9 w-full text-lg text-primary-100 leading-tight" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));">Workshop</div>
+            
+            </div>
+          </div>
+
+
+          <!-- <div class="relative lg:grid grid-rows-2 grid-flow-col gap-4">
+            <div class="relative lg:rounded-md lg:row-span-2 bg-cover bg-center mb-4 lg:mb-0 overflow-hidden" style="background-image: url(/img/greenhouserender.jpg">
+                <img class="w-full h-full" src="/img/greenhouserender.jpg">
+
+                <div class="bg-black absolute bottom-0">Cross section of the greenhouse built into the house.</div>   
+              
+              
+            </div>
+            <div class="lg:rounded-md lg:col-span-1 bg-cover bg-center aspect-w-16 aspect-h-9 mb-4 lg:mb-0" style="background-image: url(/img/houserender.jpg"> </div>
+            <div class="lg:rounded-md lg:row-span-1 lg:col-span-1 bg-cover bg-center aspect-w-16 aspect-h-9" style="background-image: url(/img/workshoprender.jpg"> </div>
+          </div> -->
+
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h3>Project Ideas</h3>
+          <div class="grid grid-cols-2 lg:grid-cols-3  gap-4">
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Sculptures</span>
+                <span>Large scale 3D printed foam and cement sculptures interacting with the landscape. Organic art deco style.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Nature Lights</span>
+                <span>Hilltop lights that illuminate at dusk and upon movement detected on the land by human only.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Intercom</span>
+                <span>Video intercom system at the gate to communicate with deliveries and visitors.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>New Trees</span>
+                <span>Plant more evergreen trees and flowering trees at specific parts of the property. Leyland Cyprus</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Reading Rooms</span>
+                <span>Outpost single room structures that have comfortable chair and desk for reading, writing, and other solitary activities.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Pulley System</span>
+                <span>Motorized pulley system between the house and the workshop to relay small payloads.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Rooftop Drone</span>
+                <span>Drone at the ready on the rooftop that can be piloted within the house.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Cameras</span>
+                <span>Network of PoE cameras to spot and identify beautiful forest wildlife.
+                </span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Driveway Lights</span>
+                <span>Addressable light fixtures that guide vehicles along the driveway.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Gate</span>
+                <span>Remote controlled linear actuator connected to the intercom system.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Cement blocks</span>
+                <span>Easy to produce aircrete light pavers that can be placed along trails for better traction. Can be easily moved and replaced.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Benches</span>
+                <span>Custom designed benches to be placed at specific scenic parts of the property.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Robot Rover</span>
+                <span>Treaded remote controlled and autonomous robot designed to carry objects along the driveway and to the building structures.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Eink displays</span>
+                <span>Addressable low power wireless displays that display passive information like weather, schedule, status, images, etc.</span>
+              </div>
+            </figure>
+
+            <figure class="ideacard">
+              <div>
+              </div>
+              <div>
+                <span>Status Sculptures</span>
+                <span>Outdoor robotic sculptures that indicate status information like weather, home presence, and calendaring.</span>
+              </div>
+            </figure>
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- <section class="py-9">
+        <div class="container mx-auto">
+          <h2 class="text-5xl font-black pb-9">Videos</h2>
+          <div class="grid grid-cols-2 gap-4">
+            <a href="https://www.youtube.com/watch?v=loKF1bI0Avw"><figure class="flex bg-gray-900 rounded-lg overflow-hidden border-4 border-gray-800 transition duration-500 ease-in-out hover:bg-gray-800">
+              <div class="w-5/12 bg-gray-800">
+
+              </div>
+              <div class="p-4">
+                <h1 class="text-3xl font-semibold ">3D Land walk through</h1>
+                <p>Statues on the ridges and in the forest. Statues on the ridges and in the forest. </p>
+    
+              </div>
+            </figure></a>
+            <figure class="bg-gray-900 rounded-lg p-6">
+              <h1>Statues</h1>
+              <p>Statues on the ridg forest</p>
+            </figure>
+            <figure class="bg-gray-900 rounded-lg p-6">
+              <h1>Statues</h1>
+              <p>Statues on the ridg forest</p>
+            </figure>
+            
+            <div>1</div>
+            
+            <div>9</div>
+          </div>
+        </div>
+      </section> -->
+
+      <section>
+        <div class="container">
+          <h3>Background</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 text-xl lg:text-xl xl:text-2xl">
+            <div class="leading-relaxed">
+              <p>In June of 2020, my wife and I decided to move out of NYC. We’ve been living in NYC for 15 years and covid made us realize we wanted to live closer to nature. We drew a 90 minute circle around NYC, rented a car and drove all around: PA, Upstate NY, Western Mass and CT.</p>
+              <p>Initially, we were looking for a house, however, most houses on the market in the northeastern US are colonial style and at least 35 years old. We expanded our search to plots of land. The first piece of land we saw was a huge hilly and forested piece deep down a private gravel road in Roxbury CT. We walked up an old logger’s trail on the property, crossing a creek, settling at a plateau surrounded by rocky hills. It was exactly where we wanted to live.</p>
+              <p>I grew up in the suburbs of Chicago with a forest preserve as a backyard. The forest was my favorite place. When I was young, I saw the movie Ferris Bueller's day off. One of the characters: Cameron's house is a steel and glass modern that cantilevers over a forest ravine. It has been my dream to build a similar secluded house canopied by the forest.</p>
+            </div>
+            <div class="leading-relaxed">
+              <p>Because I'm a creative polymath autodidact, I wanted a reasonably large sized workshop where I can focus on all of my existing projects - and new projects that I haven't had the space for yet. I want to start experimenting with larger scale projects like large sculpture building, machine building, and robotics. I wanted it to be a separate structure, far enough from the house that it would be a walk to get there.</p>
+              <p>After interviewing a bunch of architects, I went with Julio Salcedo Fernandez of Scalar Architects. Their group has experience designing modern projects, both residential and commercial. After the designs were firm, we chose Lambert and Barr as the contractors because of their diligence on the project and the very positive references.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h3>Timeline</h3>
+          <ul class="timeline">
+            <li class="done">
+              <div>Buy Land</div>
+              <div>June 7th, 2020</div>
+            </li>
+            <li class="done">
+              <div>Get Land Survey from Civil Engineers</div>
+              <div>June 7th, 2020</div>
+              <div>Some notes and shit.</div>
+            </li>
+            <li class="done">
+              <div>Get Wetlands Approval for building</div>
+              <div>June 7th, 2020</div>
+              <div>Some notes and shit.</div>
+            </li>
+            <li class="done">
+              <div>Design House / Workshop</div>
+              <div>June 7th, 2020</div>
+              <div>Some notes and shit.</div>
+            </li>
+            <li class="done">
+              <div>Get Building Contractor</div>
+              <div>April 19th, 2021</div>
+              <div>Contracted Lambert & Barr to build the driveway.</div>
+            </li>
+            <li>
+              <div>Get Approval to Build</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Build temporary driveway and bridge</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Dig foundations for house and Workshop</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Bring in Electric and Internet</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Drill for water</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Build Barn to bring in electric and internet</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Pour Foundations</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Framing</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Insulation</div>
+              <div>April 19th, 2021</div>
+            </li>
+            <li>
+              <div>Windows</div>
+              <div>April 19th, 2021</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-gray-900 pt-16 pb-16">
+        <div class="container">
+          <h3>Hi Everyone! I want your feedback.</h3>
+          <p>I made this site so I can update people on the current design and progress of the building project. It's a work in progress, so I would love your feedback!</p>
+          <p>Feel free to email me with ideas, suggestions, or questions:</p>
+          <p><a href="charles@wonderunit.com">charles@wonderunit.com</a></p>
+        </div>
+      </section>
+
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/modelviewer.js"></script>
+
+  </body>
+</html>
