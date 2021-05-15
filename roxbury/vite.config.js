@@ -6,7 +6,8 @@ module.exports = {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        modelviewer: resolve(__dirname, 'modelviewer.js')
+        modelviewer: resolve(__dirname, 'modelviewer.js'),
+        sculptures: resolve(__dirname, 'sculptures/index.html'),
       }
     }
   }

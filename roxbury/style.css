@@ -71,6 +71,14 @@
     }
   }
   
+  a.button {
+    @apply bg-primary-900 px-6 py-4 rounded-lg;
+  }
+
+  a.button:hover {
+    @apply bg-primary-700;
+  }
+
   .floor-button {
     @apply bg-primary-200 inline p-2 text-xs sm:text-sm rounded-md font-semibold bg-opacity-20 hover:bg-opacity-50 text-primary-300 hover:text-primary-100 cursor-pointer transition duration-200 ease-in-out;
   }
